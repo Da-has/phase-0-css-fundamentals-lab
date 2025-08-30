@@ -1,5 +1,63 @@
-body {
-  width: 100%;
-  height: 100%;
+/* Reset default browser margin/padding and set box-sizing */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the header text */
+header h1 {
+  text-align: center;
+}
+
+/* Center the navigation links and style them */
+nav {
+  text-align: center;
+}
+
+nav a {
+  padding: 0 10px;
+  background-color: grey; /* You can change this color */
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: darkgrey;
+}
+
+/* Center the featured image */
+#featured-property img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style the image caption */
+#featured-property figcaption {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Style the featured text block */
+#featured-property p {
+  width: 800px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* Make #details section horizontal */
+#details div {
+  float: left;
+  width: 25%;
+  background-color: #f2f2f2; /* Same background for all bottom divs */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Clear floats to prevent layout issues */
+#details::after {
+  content: "";
+  display: table;
+  clear: both;
 }
